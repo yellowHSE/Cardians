@@ -10,44 +10,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <style>
-        /* 링크버튼1 */
-        a.btn-login {
-            display: inline-block;
-            padding: 20px 30px;
-            background-color: blue;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            min-width: 100px;
-            text-align: center;
-        }
-        a.btn-signup {
-            display: inline-block;
-            padding: 20px 30px;
-            background-color: blue;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            min-width: 100px;
-            text-align: center;
-        }
+
     </style>
 </head>
 
 <body>
-    <div id="mainitems">
-        <h1>Cardians</h1>
-        <p>Vehicle flood detection service</p>
+    <div class="mainwrap">
+        <div class="mainitems">
+            <img src="{% static 'img/Union.png' %}" class="mainlogo" alt="">
+            <h1>Cardians</h1>
+            <p>Vehicle flood detection service</p>
 
+
+
+            <a href="login" class="btn-login">SIGN IN / SIGN UP</a>
+            <br><br>
+            <!--<a href="signup" class="btn-signup">SIGNUP</a>-->
+
+
+        </div>
     </div>
-    <div id="mainbtns">
-        <a href="login" class="btn-login">LOGIN</a>
-        <br><br>
-        <a href="signup" class="btn-signup">SIGNUP</a>
-
-    </div>
-
-
 </body>
 
 </html>
