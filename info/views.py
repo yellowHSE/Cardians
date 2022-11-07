@@ -3,5 +3,6 @@ from django.shortcuts import render
 # Create your views here.
 from django.shortcuts import render
 
-def index(request):
-	return render(request, 'user/hi.html')
+def mycar(request):
+	return render(request, 'info/mycar.html')
+
