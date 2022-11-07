@@ -1,6 +1,6 @@
-#Cardians
+# Cardians
 
-###docker 배포
+### docker 배포
 docker build --tag hdddhdd/cardian:1.0.0 .
 docker run -d -p 8000:8000 hdddhdd/cardian:1.0.0
 
