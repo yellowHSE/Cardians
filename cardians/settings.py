@@ -11,6 +11,14 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+#파베설정(푸시알림)
+# import firebase_admin
+# from firebase_admin import credentials
+
+# cred_path = os.path.join(BASE_DIR, "serviceAccountKey.json")
+# cred = credentials.Certificate(cred_path)
+# firebase_admin.initialize_app(cred)
+##########
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -48,6 +56,8 @@ INSTALLED_APPS = [
 
     'main',
     'info',
+    'webpush',
+    'push_notification',
 
 ]
 SITE_ID = 1
@@ -81,7 +91,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'cardians.wsgi.application'
 
-
+WEBPUSH_SETTINGS = {
+    "VAPID_PUBLIC_KEY": "BLNBBLj4y6N3zBEMUVhV_7S_ATXa373I64s8Pzm6M-IisLy6zz1h0ZHZtkPO180aicK1rCzIqNGTFYRKz1I2Tn4",
+    "VAPID_PRIVATE_KEY":"8v8UijHy_nWL4sNIkf_0Jr3-MGm2p6lyB_gTP6f2FYE",
+    "VAPID_ADMIN_EMAIL": "nuly7029@gmail.com"
+}
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 

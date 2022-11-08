@@ -8,12 +8,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{%static 'css/style.css'%}">
+
+    <style>
+        body {
+            /*background img static으로 넣기*/
+        }
+    </style>
 </head>
 
 <body>
-    <div class="login-wrap">
-        <div class="login-html">
+    <!--이부분클래스 수정하기-->
+    <div class="mycar-wrap">
+        <div class="mycar-html" style="align-items: center; ">
+            <div class="logobox">
+                <img class="minilogo" src="{% static 'img/Union.png'%}" alt="">
+                <h2 style=" display: inline;"> Hello 사람이름넣기</h2>
+
+            </div>
+
+            <div class="buttons">
+                <!-- <a href="#" class="btn green rounded">24°C <br>climate</a>
+                <a href="#" class="btn yellow rounded">Safety Map</a>
+                <a href="#" class="btn green rounded">Button</a> -->
+                <br><br><br>
+                <span class="roundedbox" style="background: #586DF6;
+                 color: white;">
+                    <p>Climate</p>
+                    <!--수치받아서 여기에 넣기-->
+                    <p>24°C</p>
+                    <img src="{%static 'img/weather.png'%}" alt="" style="width: 40px;">
+                </span>
+                <span class="roundedbox" style="background-color: #FFE600;">
+                    <p>Safety Map</p>
+                    <img src="{%static 'img/map.png'%}" alt="" style="width: 40px;">
+                </span>
+                <span class="roundedbox" style="background-color: #EF4040; color: white;">
+                    <p>Maintenance</p>
+                    <!--수치받아서 여기에 넣기-->
+                    <p>2 Mild</p>
+                    <img src="{%static 'img/warning2.png'%}" alt="" style="width: 40px;">
+                </span>
+
+
+            </div>
+            <div class="imgbox">
+                <img class="maincarimg" src="{% static 'img/carreal.png' %}" alt="">
+
+            </div>
         </div>
+
+
+    </div>
     </div>
 </body>
 
