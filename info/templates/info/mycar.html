@@ -22,7 +22,11 @@
         <div class="mycar-html" style="align-items: center; ">
             <div class="logobox">
                 <img class="minilogo" src="{% static 'img/Union.png'%}" alt="">
-                <h2 style=" display: inline;"> Hello 사람이름넣기</h2>
+                <h2 style=" display: inline;"> Hello 사람이름넣기
+                </h2>
+                <!-- <h2>
+                    {{weather}}
+                </h2> -->
 
             </div>
 
@@ -35,10 +39,10 @@
                  color: white;">
                     <p>Climate</p>
                     <!--수치받아서 여기에 넣기-->
-                    <p>24°C</p>
+                    <p> {{weather}}</p>
                     <img src="{%static 'img/weather.png'%}" alt="" style="width: 40px;">
                 </span>
-                <span class="roundedbox" style="background-color: #FFE600;">
+                <span class="roundedbox" style="background-color: #FFE600;" onclick="location.href='https://www.safemap.go.kr/main/smap.do?flag=2#'">
                     <p>Safety Map</p>
                     <img src="{%static 'img/map.png'%}" alt="" style="width: 40px;">
                 </span>

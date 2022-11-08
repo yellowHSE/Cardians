@@ -56,7 +56,7 @@ INSTALLED_APPS = [
 
     'main',
     'info',
-    'webpush',
+    # 'webpush',
     'push_notification',
 
 ]
@@ -91,11 +91,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'cardians.wsgi.application'
 
-WEBPUSH_SETTINGS = {
-    "VAPID_PUBLIC_KEY": "BLNBBLj4y6N3zBEMUVhV_7S_ATXa373I64s8Pzm6M-IisLy6zz1h0ZHZtkPO180aicK1rCzIqNGTFYRKz1I2Tn4",
-    "VAPID_PRIVATE_KEY":"8v8UijHy_nWL4sNIkf_0Jr3-MGm2p6lyB_gTP6f2FYE",
-    "VAPID_ADMIN_EMAIL": "nuly7029@gmail.com"
-}
+# WEBPUSH_SETTINGS = {
+#     "VAPID_PUBLIC_KEY": "BLNBBLj4y6N3zBEMUVhV_7S_ATXa373I64s8Pzm6M-IisLy6zz1h0ZHZtkPO180aicK1rCzIqNGTFYRKz1I2Tn4",
+#     "VAPID_PRIVATE_KEY":"8v8UijHy_nWL4sNIkf_0Jr3-MGm2p6lyB_gTP6f2FYE",
+#     "VAPID_ADMIN_EMAIL": "nuly7029@gmail.com"
+# }
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
