@@ -13,6 +13,22 @@
         body {
             /*background img static으로 넣기*/
         }
+        .box {
+    width: 150px;
+    height: 150px; 
+    border-radius: 70%;
+    overflow: hidden;
+}
+.profile {
+    
+    object-fit: cover;
+ 
+    border-radius: 70%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border: 10px black;
+}
     </style>
 </head>
 
@@ -22,12 +38,10 @@
         <div class="mycar-html" style="align-items: center; ">
             <div class="logobox">
                 <img class="minilogo" src="{% static 'img/Union.png'%}" alt="">
-                <h2 style=" display: inline;"> Hello 사람이름넣기
+                <h2 style=" display: inline;"> Hello, Ericson!
                 </h2>
-                <!-- <h2>
-                    {{weather}}
-                </h2> -->
-
+                <img class="profile" src="{%static 'img/profile.jpeg'%}" alt="">
+                  
             </div>
 
             <div class="buttons">
@@ -39,7 +53,8 @@
                  color: white;">
                     <p>Climate</p>
                     <!--수치받아서 여기에 넣기-->
-                    <p> {{weather}}</p>
+                    <p> {{weather}} / {{status}}</p>
+                    
                     <img src="{%static 'img/weather.png'%}" alt="" style="width: 40px;">
                 </span>
                 <span class="roundedbox" style="background-color: #FFE600;" onclick="location.href='https://www.safemap.go.kr/main/smap.do?flag=2#'">

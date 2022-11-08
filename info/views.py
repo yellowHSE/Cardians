@@ -20,8 +20,10 @@ def mycar(request):
 
     soup = BeautifulSoup(webpage, 'html.parser')
     temps = soup.find('div','temperature_text')
-
+    status = soup.find('span', 'weather before_slash')
     #test
     a  = temps.text.strip()[5:]
+    b = status.text.strip()
     #print(a)
-    return render(request, 'info/mycar.html', {'weather':a})
+    #print(b)
+    return render(request, 'info/mycar.html', {'weather':a, 'status':b})
