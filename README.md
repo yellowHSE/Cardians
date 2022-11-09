@@ -1,7 +1,8 @@
 # Cardians
-
+안녕하세요, Cardians 팀입니다.
 ### docker 배포
 docker build --tag hdddhdd/cardian:1.0.0 .
+
 docker run -d -p 8000:8000 hdddhdd/cardian:1.0.0
 
 
