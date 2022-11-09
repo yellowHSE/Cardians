@@ -75,7 +75,14 @@
             </div>
             <div class="imgbox">
                 <img class="maincarimg" src="{% static 'img/carreal.png' %}" alt="">
-
+                <p>
+                    {% if sensorstate == 1%}
+                    살짝쿵 침수중
+                    {%endif%}
+                    {% elif sensorstate == 2%}
+                    문이 안열려요ㅠㅠ
+                    {%endif%}
+                    </p>
             </div>
         </div>
 

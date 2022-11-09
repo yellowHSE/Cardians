@@ -26,9 +26,17 @@ def mycar(request):
     #DB에서 수위 조절 센서 테이블 객체 모두 불러오기
     sensorValues = Sensor.objects.all()
 
+    #수위센서가 가질 수 있는 범위 0~115 
+    #(30이상이면 침수시작 / 80이상이면 문이 안열릴정도로 완전 위험)
+    sensorstate=0
+    if sensorValues.watersensor >= 30 
+        sensorstate = 1
+    else if sensorValues.watersensor >=80 
+        sensorstate = 2
+
     #test
     a  = temps.text.strip()[5:]
     b = status.text.strip()
     #print(a)
     #print(b)
-    return render(request, 'info/mycar.html', {"sensorValues": sensorValues, 'weather':a, 'status':b})
+    return render(request, 'info/mycar.html', {"sensorValues": sensorValues, 'weather':a, 'status':b, 'sensorstate':sensorstate})
