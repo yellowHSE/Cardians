@@ -52,8 +52,11 @@
                 <span class="roundedbox" style="background: #586DF6;
                  color: white;">
                     <p>Climate</p>
-                    <!--수치받아서 여기에 넣기-->
-                    <p> {{weather}} / {{status}}</p>
+                    <!--watersensor 수치-->
+                    <!-- {% for Sensor in sensorValues %}
+                        {{Sensor.watersensor}}
+                    {% endfor %} -->
+                    <p>{{weather}} / {{status}}</p> -->
                     
                     <img src="{%static 'img/weather.png'%}" alt="" style="width: 40px;">
                 </span>
